@@ -61,6 +61,8 @@ public class Main extends javax.swing.JPanel {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
 
@@ -339,15 +341,30 @@ public class Main extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Employee Management", jPanel1);
 
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Name", "ID Number", "Phone No", "Stationed", "Client Name", "Client Contact", "Supervisor"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable2);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1269, Short.MAX_VALUE)
+            .addComponent(jScrollPane2)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 734, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 364, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Clients Management", jPanel2);
@@ -411,9 +428,17 @@ public class Main extends javax.swing.JPanel {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -426,18 +451,29 @@ public class Main extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JButton jbtnFilter;
     private javax.swing.JTextField jtxtClient;
     private javax.swing.JTextField jtxtClient1;
+    private javax.swing.JTextField jtxtClient2;
+    private javax.swing.JTextField jtxtClient3;
     private javax.swing.JTextField jtxtID;
     private javax.swing.JTextField jtxtID1;
+    private javax.swing.JTextField jtxtID2;
+    private javax.swing.JTextField jtxtID3;
     private javax.swing.JTextField jtxtIphone;
     private javax.swing.JTextField jtxtIphone1;
+    private javax.swing.JTextField jtxtIphone2;
+    private javax.swing.JTextField jtxtIphone3;
     private javax.swing.JTextField jtxtName;
     private javax.swing.JTextField jtxtName1;
+    private javax.swing.JTextField jtxtName2;
+    private javax.swing.JTextField jtxtName3;
     // End of variables declaration//GEN-END:variables
 }
